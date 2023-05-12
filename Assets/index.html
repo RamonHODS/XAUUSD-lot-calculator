@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lot Size Calculator</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <h1>XAUUSD Lot Size Calculator</h1>
+  <form>
+    <label for="accountCurrency">Account Currency:</label>
+    <input type="text" id="accountCurrency" value="USD"><br><br>
+
+    <label for="accountBalance">Account Balance:</label>
+    <input type="number" id="accountBalance" value="500"><br><br>
+
+    <label for="riskPercentage">Risk Percentage:</label>
+    <input type="number" id="riskPercentage" value="10"><br><br>
+
+    <label for="stopLossPips">Stop Loss (in pips):</label>
+    <input type="number" id="stopLossPips" value="100"><br><br>
+
+    <label for="pipValue">Pip Value:</label>
+    <input type="number" id="pipValue" value="0.01"><br><br>
+
+    <label for="leverage">Leverage:</label>
+    <input type="number" id="leverage" value="500"><br><br>
+
+    <label for="marginRequirement">Margin Requirement:</label>
+    <input type="number" id="marginRequirement" value="1"><br><br>
+
+    <button type="button" onclick="calculate()">Calculate Lot Size</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
