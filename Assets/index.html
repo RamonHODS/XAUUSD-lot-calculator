@@ -8,7 +8,7 @@
   <h1>XAUUSD Lot Size Calculator</h1>
   <form>
     <label for="accountCurrency">Account Currency:</label>
-    <input type="text" id="accountCurrency" value="USD"><br><br>
+    <input type="text" id="accountCurrency" class="disabled" value="USD" disabled><br><br>
 
     <label for="accountBalance">Account Balance:</label>
     <input type="number" id="accountBalance" value="500"><br><br>
@@ -20,14 +20,11 @@
     <input type="number" id="stopLossPips" value="100"><br><br>
 
     <label for="pipValue">Pip Value:</label>
-    <input type="number" id="pipValue" value="0.01"><br><br>
+    <input type="number" id="pipValue" class="disabled" value="0.01" disabled><br><br>
 
     <label for="leverage">Leverage:</label>
-    <input type="number" id="leverage" value="500"><br><br>
-
-    <label for="marginRequirement">Margin Requirement:</label>
-    <input type="number" id="marginRequirement" value="1"><br><br>
-
+    <input type="number" id="leverage" class="disabled" value="500" disabled><br><br>
+    
     <button type="button" onclick="calculate()">Calculate Lot Size</button>
   </form>
 
