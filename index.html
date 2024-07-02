@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XAUUSD Lot Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>XAUUSD Lot Calculator</h1>
+  </header>
+  <main>
+    <section id="calculator-section">
+      <form id="calculator-form">
+        <div>
+          <label for="account-balance">Account Balance:</label>
+          <input type="number" id="account-balance" name="account-balance" required>
+        </div>
+        <div>
+          <label for="risk-percentage">Risk Percentage:</label>
+          <input type="number" id="risk-percentage" name="risk-percentage" required>
+        </div>
+        <div>
+          <label for="stop-loss">Stop Loss (pips):</label>
+          <input type="number" id="stop-loss" name="stop-loss" required>
+        </div>
+        <button type="button" id="calculate-btn">Calculate</button>
+      </form>
+      <div id="result">
+        <h2>Result</h2>
+        <p id="lot-size">Lot Size: 0.00</p>
+      </div>
+    </section>
+  </main>
+  <script src="Assets/js/script.js"></script>
+</body>
+</html>
