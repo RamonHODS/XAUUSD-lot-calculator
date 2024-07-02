@@ -1,49 +1,107 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    padding: 20px;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="number"] {
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-  .disabled {
-    background-color: #f2f2f2;
-    color: #888888;
-  }  
-  
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+}
+
+main {
+  margin-top: 80px; /* Adjust this value to make space for the fixed header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px); /* Adjust height to make space for the fixed header */
+}
+
+#calculator-section {
+  background: #2e2e2e;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #3e3e3e;
+  color: #fff;
+  width: calc(100% - 22px); /* Adjust for padding */
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+#result {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#result h2 {
+  margin-bottom: 10px;
+}
+
+#lot-size {
+  font-size: 1.5em;
+  color: #007BFF;
+  transition: transform 0.3s ease;
+}
+
+#lot-size.updated {
+  transform: scale(1.1);
+}
